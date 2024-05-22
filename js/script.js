@@ -48,18 +48,17 @@ for (let index = 0; index < team.length; index++) {
     divCard.classList.add('cardTeam');
     containerEl.appendChild(divCard);
     
-    let ruoloEl = document.createElement('p');
-    ruoloEl.append(element.ruolo);
-    divCard.appendChild(ruoloEl);
-
-    let nameEl = document.createElement('h1');
-    nameEl.append(element.nome);
-    divCard.appendChild(nameEl)
-    
     let imgEl = document.createElement('p');
     imgEl.append(element.foto);
     divCard.appendChild(imgEl);
     
+    let nameEl = document.createElement('h2');
+    nameEl.append(element.nome);
+    divCard.appendChild(nameEl);
+    
+    let ruoloEl = document.createElement('p');
+    ruoloEl.append(element.ruolo);
+    divCard.appendChild(ruoloEl);
 }
 
 
