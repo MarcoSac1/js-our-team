@@ -24,7 +24,7 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 
 <!-- 
 - creo un array di oggetti con al interno ogni mebro del e le informazioni desiderate
-- faccio un console.log per verificare tutte le informazioni inserite
+- faccio un ciclo for per verificare tutte le informazioni inserite
 - creo un elemento nel dom per ogni array 
 - lo aggiungo al dom
  -->

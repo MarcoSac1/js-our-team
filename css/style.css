@@ -1,0 +1,12 @@
+#container{
+    background-color: brown;
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardteam{
+    background-color: blanchedalmond;
+}

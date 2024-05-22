@@ -33,12 +33,25 @@ const team = [
     },
 
 ];
+// console.log(team);
 
-console.log(team);
-// - faccio un console.log per verificare tutte le informazioni inserite
+// - faccio un ciclo 'for' per verificare tutte le informazioni inserite
+for (let index = 0; index < team.length; index++) {
+    console.log(team[index]); 
+    
+}
 
 
-// - creo un elemento nel dom per ogni array 
+
+for (const index in team) {
+    const element = team[index];
+    // - creo un elemento nel dom per ogni array 
+    const containerEL = document.getElementById('container');
+    let divCard = document.createElement('div');
+    divCard.classList.add('cardTeam');
+    console.log(divCard);
+    divCard.appendChild('div');
+}
 
 
 // - lo aggiungo al dom
