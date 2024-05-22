@@ -4,56 +4,62 @@ const team = [
     {
         nome :'Wayne Barnett',
         ruolo :'Founder & CEO',
-        foto :'./img/wayne-barnett-founder-ceo.jpg',
+        foto :'wayne-barnett-founder-ceo.jpg',
     },
     {
         nome :'Angela Caroll',
         ruolo :'Chief Editor',
-        foto :'./img/angela-caroll-chief-editor.jpg',
+        foto :'angela-caroll-chief-editor.jpg',
     },
     {
         nome :'Walter Gordon',
         ruolo :'Office Manager',
-        foto :'./img/walter-gordon-office-manager.jpg',
+        foto :'walter-gordon-office-manager.jpg',
     },
     {
         nome :'Angela Lopez',
         ruolo :'Social Media Manager',
-        foto :'./img/angela-lopez-social-media-manager.jpg',
+        foto :'angela-lopez-social-media-manager.jpg',
     },
     {
         nome :'Scott Estrada',
         ruolo :'Developer',
-        foto :'./img/scott-estrada-developer.jpg',
+        foto :'scott-estrada-developer.jpg',
     },
     {
         nome :'Barbara Ramos',
         ruolo :'Graphic Designer',
-        foto :'./img/barbara-ramos-graphic-designer.jpg',
+        foto :'barbara-ramos-graphic-designer.jpg',
     },
 
 ];
 // console.log(team);
 
+const containerEl = document.getElementById('container');
+
+
 // - faccio un ciclo 'for' per verificare tutte le informazioni inserite
 for (let index = 0; index < team.length; index++) {
     console.log(team[index]); 
-    
-}
-
-
-// - creo un elemento nel dom per ogni array 
-const containerEL = document.getElementById('container');
-
-for (const index in team) {
     const element = team[index];
+    // - creo un elemento nel dom per ogni array 
     const divCard = document.createElement('div');
-    divCard.classList.add('cardTeam');
-    divCard.append('div');
     
-    console.log(divCard);
+    divCard.classList.add('cardTeam');
+    divCard.append(team[index].ruolo);
+    containerEl.appendChild(divCard);
 
+    const nameEl = document.createElement('h1');
+    nameEl.append(team[index].nome);
+    divCard.appendChild(nameEl)
+    // - lo aggiungo al dom
+    
+    let imgEl = document.createElement('img');
+    imgEl.append(team[index].foto);
+    divCard.appendChild(imgEl);
+    
 }
 
 
-// - lo aggiungo al dom
+
+

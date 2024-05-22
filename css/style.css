@@ -3,18 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #container{
-    background-color: brown;
-    width: 1000px;
-    height: 100px;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: green;
+    flex-wrap: wrap;
 }
 
-.cardteam{
-    background-color: blanchedalmond;
-    height: 100px;
-    width: 100px;
+.cardTeam{
+    background-color: rgb(221, 138, 15);
+    color: white;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
 }
