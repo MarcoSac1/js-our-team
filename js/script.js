@@ -42,15 +42,17 @@ for (let index = 0; index < team.length; index++) {
 }
 
 
+// - creo un elemento nel dom per ogni array 
+const containerEL = document.getElementById('container');
 
 for (const index in team) {
     const element = team[index];
-    // - creo un elemento nel dom per ogni array 
-    const containerEL = document.getElementById('container');
-    let divCard = document.createElement('div');
+    const divCard = document.createElement('div');
     divCard.classList.add('cardTeam');
+    divCard.append('div');
+    
     console.log(divCard);
-    divCard.appendChild('div');
+
 }
 
 

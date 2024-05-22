@@ -1,12 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #container{
     background-color: brown;
     width: 1000px;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .cardteam{
     background-color: blanchedalmond;
+    height: 100px;
+    width: 100px;
 }
