@@ -37,25 +37,27 @@ const team = [
 
 const containerEl = document.getElementById('container');
 
-
 // - faccio un ciclo 'for' per verificare tutte le informazioni inserite
 for (let index = 0; index < team.length; index++) {
     console.log(team[index]); 
     const element = team[index];
-    // - creo un elemento nel dom per ogni array 
+    
+    
+    // - creo un elemento nel dom per ogni array e lo aggiungo al dom
     const divCard = document.createElement('div');
-    
     divCard.classList.add('cardTeam');
-    divCard.append(team[index].ruolo);
     containerEl.appendChild(divCard);
-
-    const nameEl = document.createElement('h1');
-    nameEl.append(team[index].nome);
-    divCard.appendChild(nameEl)
-    // - lo aggiungo al dom
     
-    let imgEl = document.createElement('img');
-    imgEl.append(team[index].foto);
+    let ruoloEl = document.createElement('p');
+    ruoloEl.append(element.ruolo);
+    divCard.appendChild(ruoloEl);
+
+    let nameEl = document.createElement('h1');
+    nameEl.append(element.nome);
+    divCard.appendChild(nameEl)
+    
+    let imgEl = document.createElement('p');
+    imgEl.append(element.foto);
     divCard.appendChild(imgEl);
     
 }
